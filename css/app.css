@@ -12,19 +12,7 @@
 
 /* BASE STYLES ------------------------------------- */
 
-h2 {
-    font-family: 'catamaran', sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-    color: #fff;
-    margin-bottom: 94px;
-}
-.gift-card p {
-    border: 3px solid #fff;
-    display: inline-block;
-    padding: 11px 48px 9px 48px;
-    text-transform: uppercase;
-}
+
 
 /* HEADER  ----------------------------------------- */
 
@@ -61,6 +49,14 @@ header:after {
     z-index: -3;
 }
 
+header h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 94px;
+}
+
 .cover img {
     position: relative;
     background-size: cover;
@@ -88,15 +84,19 @@ header:after {
     z-index: -1;
 }
 
-.gift-card p {
+.head-button p {
     font-family: 'catamaran', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #fff;
     float: left;
+    border: 3px solid #fff;
+    display: inline-block;
+    padding: 11px 48px 9px 48px;
+    text-transform: uppercase;
 }
 
-.gift-card p:hover {
+.head-button p:hover {
     background-color: #fff;
     transition: .2s;
     color: #707070;
@@ -142,15 +142,17 @@ nav ul li a:hover {
 
 /* MAIN  ----------------------------------------- */
 
-.main h2 {
+.main h2,
+.wash h2 {
     font-family: 'catamaran', sans-serif;
     font-weight: 200;
     font-size: 60px;
     color: #707070;
-    padding-top: 58px;
+    padding: 58px 0 94px 0;
 }
 
-.main h2:after {
+.main h2:after,
+.wash h2:after {
     display: block;
     height: 2px;
     background-color: #c2e066;
@@ -222,7 +224,7 @@ nav ul li a:hover {
     font-weight: 700;
     font-size: 20px;
     color: #b4b4b4;
-    margin: 74px 0 46px;
+    margin: 60px 0 46px;
 }
 
 .content ul {
@@ -257,12 +259,193 @@ nav ul li a:hover {
     width: 145px;
 }
 
+/* THE WASH  -------------------------------------- */
+
+.wash {
+    background-color: #f6f6f6;
+}
+
+.wash h4 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #a1a1a1;
+    margin: 60px 0 36px;
+}
+
+.wash ul {
+    padding-bottom: 130px;
+    margin-left: 6px;
+}
+
+.wash ul li {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #a1a1a1;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.wash ul li:before {
+    content: " ";
+    display: inline-block;
+    background-color: #99cc00;
+    position: relative;
+    margin: 0 16px 4px 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+}
+
+.wash-img-left img,
+.wash-img-right img {
+    margin: auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin-top: 54px;
+}
+
+.wash-img-left {
+    float: left;
+}
+
+.wash-img-right {
+    float: right;
+}
+
+.wash-bucket {
+    float: none !important;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* GIFT CARD  ------------------------------------- */
+
+.gift h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #707070;
+    padding-top: 88px;
+}
+
+.gift h3 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 200;
+    font-size: 38px;
+    color: #707070;
+    padding-bottom: 46px;
+}
+
+.gift p {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #707070;
+    border: 3px solid #99cc00;
+    display: inline-block;
+    margin-left: 24px;
+    padding: 10px 40px 8px 40px;
+    text-transform: uppercase;
+}
+
+.gift p:hover {
+    background-color: #99cc00;
+    transition: .2s;
+    color: #fff;
+}
+
+.gift img {
+    display: block;
+    margin: 0 auto;
+    padding: 88px 0;
+    width: 84%;
+}
+
+/* CONTACT  ------------------------------------ */
+
+.contact {
+    background-color: #f6f6f6;
+}
+
+.contact h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #707070;
+    padding: 88px 0 56px 0;
+}
+
+.contact h3 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #707070;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #707070;
+    padding-bottom: 46px;
+}
+
+.address {
+    float: left;
+    padding-right: 52px;
+}
+
+.inline-form input,
+.inline-form textarea {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #949494;
+    height: 36px;
+    border: 0px;
+    width: 75%;
+}
+
+.inline-form textarea {
+    height: 106px;
+}
+
+.inline-form input:active,
+.inline-form input:focus,
+.inline-form input:hover {
+    background-color: #949494;
+    border: 0px;
+}
+
+.inline-form input[type=submit] {
+    color: #707070;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #99cc00;
+    height: 36px;
+    width: 122px;
+    outline: none;
+    margin-bottom: 88px;
+}
+
+
+.inline-form input[type=submit]:hover {
+    background-color: #f6f6f6;
+    color: #99cc00;
+    border: 1px solid #99cc00;
+    transition: .2s;
+}
+
 /* SUB FOOTER  ------------------------------------ */
 
 .sub-footer {
     background-color: #b7b7b7;
     color: #fff;
-    margin-top: 75px;
     padding-bottom: 48px;
 }
 
@@ -319,7 +502,6 @@ nav ul li a:hover {
 .info {
     padding-left: 60px;
 }
-
 
 .icon {
     color: #949494;
