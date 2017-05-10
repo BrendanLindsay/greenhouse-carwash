@@ -571,6 +571,19 @@ footer p {
 }
 }
 
+.text {
+    padding-left: 120px;
+}
+
+.card {
+    float: none;
+    margin: auto 0;
+}
+
+.gift img {
+    width: 60%;
+}
+
 @media screen and (min-width: 1025px) {
 
 #myNav[style] {
@@ -619,6 +632,42 @@ header nav ul {
 .info {
     padding-left: 30px;
 }
+
+.wash h4 {
+    margin: 58px 0 36px;
+    text-align: center;
+}
+
+.wash ul {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.bucket img {
+    height: 124px;
+    width: 124px;
+}
+
+.wash ul li:before {
+    display: none;
+}
+
+.inline-form {
+    margin: 80px auto;
+    width: 55%;
+    float: none !important;
+}
+
+.inline-form h2 {
+    text-align: center;
+    font-size: 56px;
+}
+
+.inline-form input,
+.inline-form textarea {
+    width: 100%;
+}
+
 }
 
 @media screen and (max-width: 639px) {
@@ -676,12 +725,14 @@ header nav ul {
     margin-bottom: 62px;
 }
 
-.content h4 {
+.content h4,
+.wash h4 {
     margin: 58px 0 36px;
     text-align: center;
 }
 
-.content ul {
+.content ul,
+.wash ul {
     padding-bottom: 50px;
     text-align: center;
 }
@@ -691,9 +742,11 @@ header nav ul {
     width: 124px;
 }
 
-.content ul li:before {
+.content ul li:before,
+.wash ul li:before {
     display: none;
 }
+
 
 }
 
