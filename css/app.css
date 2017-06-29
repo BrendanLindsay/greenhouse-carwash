@@ -12,6 +12,35 @@
 
 /* BASE STYLES ------------------------------------- */
 
+.main h2,
+.wash h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    color: #707070;
+    padding-top: 88px;
+}
+
+.main h2:after,
+.wash h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c2e066;
+    content: " ";
+    height: 5px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.gift h2,
+.contact h2 {
+    font-family: 'catamaran', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    color: #707070;
+    padding-top: 88px;
+}
 
 
 /* HEADER  ----------------------------------------- */
@@ -142,25 +171,8 @@ nav ul li a:hover {
 
 /* MAIN  ----------------------------------------- */
 
-.main h2,
-.wash h2 {
-    font-family: 'catamaran', sans-serif;
-    font-weight: 200;
-    font-size: 60px;
-    color: #707070;
+.main h2 {
     padding: 58px 0 94px 0;
-}
-
-.main h2:after,
-.wash h2:after {
-    display: block;
-    height: 2px;
-    background-color: #c2e066;
-    content: " ";
-    height: 5px;
-    width: 170px;
-    margin: 0 auto;
-    margin-top: 20px;
 }
 
 .cycle img {
@@ -324,18 +336,14 @@ nav ul li a:hover {
 
 /* GIFT CARD  ------------------------------------- */
 
-.gift h2 {
-    font-family: 'catamaran', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    color: #707070;
-    padding-top: 88px;
+.gift {
+    padding-bottom: 88px;
 }
 
 .gift h3 {
     font-family: 'catamaran', sans-serif;
-    font-weight: 200;
-    font-size: 38px;
+    font-weight: 400;
+    font-size: 26px;
     color: #707070;
     padding-bottom: 46px;
 }
@@ -347,7 +355,6 @@ nav ul li a:hover {
     color: #707070;
     border: 3px solid #99cc00;
     display: inline-block;
-    margin-left: 24px;
     padding: 10px 40px 8px 40px;
     text-transform: uppercase;
 }
@@ -361,7 +368,7 @@ nav ul li a:hover {
 .gift img {
     display: block;
     margin: 0 auto;
-    padding: 88px 0;
+    padding-top: 88px;
     width: 84%;
 }
 
@@ -369,14 +376,11 @@ nav ul li a:hover {
 
 .contact {
     background-color: #f6f6f6;
+    padding-bottom: 88px;
 }
 
 .contact h2 {
-    font-family: 'catamaran', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    color: #707070;
-    padding: 88px 0 56px 0;
+    padding-bottom: 60px;
 }
 
 .contact h3 {
@@ -397,7 +401,6 @@ nav ul li a:hover {
 
 .address {
     float: left;
-    padding-right: 52px;
 }
 
 .inline-form input,
@@ -430,9 +433,7 @@ nav ul li a:hover {
     height: 36px;
     width: 122px;
     outline: none;
-    margin-bottom: 88px;
 }
-
 
 .inline-form input[type=submit]:hover {
     background-color: #f6f6f6;
@@ -537,16 +538,27 @@ footer p {
 
 /* MEDIA QUERIES  -------------------------------------- */
 
+@media screen and (min-width: 1025px) {
+
+#myNav[style] {
+    display: none !important;
+}
+}
+
 @media screen and (max-width: 1164px) {
-.gift-card h2 {
+
+.head-button h2 {
     font-size: 48px;
 }
 
-.gift-card p {
+.head-button p {
     padding: 11px 36px 9px 36px;
 }
 
-.main h2 {
+.main h2,
+.wash h2,
+.gift h2,
+.contact h2 {
     font-size: 40px;
 }
 
@@ -569,40 +581,23 @@ footer p {
 .banner {
     margin-bottom: 96px;
 }
-}
-
-.text {
-    padding-left: 120px;
-}
-
-.card {
-    float: none;
-    margin: auto 0;
-}
 
 .gift img {
     width: 60%;
 }
 
-@media screen and (min-width: 1025px) {
-
-#myNav[style] {
-    display: none !important;
-}
-}
-
 @media screen and (max-width: 1023px) and (min-width: 640px) {
 
 .logo,
-.gift-card {
+.head-button {
     padding-left: 46px;
 }
 
-.gift-card h2 {
+.head-button h2 {
     font-size: 46px;
 }
 
-.gift-card p {
+.head-button p {
     font-size: 20px;
 }
 
@@ -629,38 +624,59 @@ header nav ul {
     margin: 236px 0 0;
 }
 
-.info {
-    padding-left: 30px;
+.content-bucket img {
+    height: 124px;
+    width: 124px;
+}
+
+.contact h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c2e066;
+    content: " ";
+    height: 5px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wash h4,
+.wash ul,
+.gift-text,
+.contact-text,
+.inline-form h2 {
+    text-align: center;
 }
 
 .wash h4 {
     margin: 58px 0 36px;
-    text-align: center;
 }
 
 .wash ul {
     padding-bottom: 50px;
-    text-align: center;
-}
-
-.bucket img {
-    height: 124px;
-    width: 124px;
 }
 
 .wash ul li:before {
     display: none;
 }
 
-.inline-form {
-    margin: 80px auto;
-    width: 55%;
-    float: none !important;
+.gift p {
+    margin-left: 0;
 }
 
-.inline-form h2 {
+.gift img {
+    width: 60%;
+}
+
+.address,
+.hours {
     text-align: center;
-    font-size: 56px;
+}
+
+.inline-form {
+    margin: 0 auto;
+    width: 55%;
+    float: none !important;
 }
 
 .inline-form input,
@@ -680,7 +696,7 @@ header:before {
     max-width: 72%;
 }
 
-.gift-card h2 {
+.head-button h2 {
     font-size: 46px;
     max-width: 64%;
 }
@@ -726,18 +742,26 @@ header nav ul {
 }
 
 .content h4,
+.content ul,
+.wash h4,
+.wash ul,
+.gift-text,
+.contact-text,
+.inline-form h2 {
+    text-align: center;
+}
+
+.content h4,
 .wash h4 {
     margin: 58px 0 36px;
-    text-align: center;
 }
 
 .content ul,
 .wash ul {
     padding-bottom: 50px;
-    text-align: center;
 }
 
-.bucket img {
+.content-bucket img {
     height: 124px;
     width: 124px;
 }
@@ -747,6 +771,35 @@ header nav ul {
     display: none;
 }
 
+.gift p {
+    margin-left: 0;
+}
+
+.gift img {
+    width: 80%;
+}
+
+.contact h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c2e066;
+    content: " ";
+    height: 5px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.inline-form {
+    margin: 0 auto;
+    width: 80%;
+    float: none !important;
+}
+
+.inline-form input,
+.inline-form textarea {
+    width: 100%;
+}
 
 }
 
@@ -760,7 +813,7 @@ header:before {
     max-width: 80%;
 }
 
-.gift-card h2 {
+.head-button h2 {
     font-size: 42px;
     max-width: 64%;
 }
